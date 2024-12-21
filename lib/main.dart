@@ -27,7 +27,7 @@ class homescreen extends StatelessWidget {
       ),
       body: Container(
         decoration:BoxDecoration(
-          color: const Color.fromARGB(136, 86, 8, 182)
+          color: const Color.fromARGB(135, 32, 8, 214)
 
         ) ,
         child: Column(
