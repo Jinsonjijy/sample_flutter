@@ -27,7 +27,7 @@ class homescreen extends StatelessWidget {
       ),
       body: Container(
         decoration:BoxDecoration(
-          color: const Color.fromARGB(135, 32, 8, 214)
+          color: const Color.fromARGB(255, 249, 249, 249)
 
         ) ,
         child: Column(
@@ -39,6 +39,7 @@ class homescreen extends StatelessWidget {
             height: 50,
             child: TextField(
               decoration: InputDecoration(
+                
                 contentPadding: EdgeInsets.symmetric(
                   vertical: 25,
                   horizontal: 50
@@ -47,7 +48,9 @@ class homescreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 
                 ),
-                 hintText: 'user name'
+                 hintText: 'user name',
+                 hintStyle: TextStyle(fontSize: 20,color: Colors.black)
+                
               ),
             ),
           )
