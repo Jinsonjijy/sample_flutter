@@ -10,7 +10,7 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark
+        primarySwatch: Colors.deepPurple
       ),
       home: homescreen(),
     );
@@ -27,30 +27,27 @@ class homescreen extends StatelessWidget {
       ),
       body: Container(
         decoration:BoxDecoration(
-          color: const Color.fromARGB(135, 32, 8, 214)
+          color: const Color.fromARGB(255, 249, 249, 249)
 
         ) ,
         child: Column(
+        
+          
           children: [
-            Center(child: IconButton(onPressed: (){}, icon: Icon(Icons.access_time)))
-          ,
-          SizedBox(
-            width: 350,
-            height: 50,
-            child: TextField(
-              decoration: InputDecoration(
-                contentPadding: EdgeInsets.symmetric(
-                  vertical: 25,
-                  horizontal: 50
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
+              TextField(
                 
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(250)
+                  ),
+                  labelText: 'username',
+                  hintText: 'helll-'
+                  
                 ),
-                 hintText: 'user name'
+                maxLength: 10,
+              
               ),
-            ),
-          )
+            
           ],
           
         ),
